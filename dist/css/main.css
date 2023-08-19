@@ -1,1 +1,27 @@
-.footer{background-color:#ddd}body{color:#add8e6}.content{margin-right:16px}.content .title,.content .title-lg{font-size:24px;color:orange}.content .title-lg{font-size:32px}.copy-protection{-webkit-user-select:none;-moz-user-select:none;user-select:none}
+/*!*******************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/sass/main.scss ***!
+  \*******************************************************************************************************************************************************/
+.footer {
+  background-color: #ddd;
+}
+
+body {
+  color: lightblue;
+}
+
+.content {
+  margin-right: 16px;
+}
+.content .title, .content .title-lg {
+  font-size: 24px;
+  color: orange;
+}
+.content .title-lg {
+  font-size: 32px;
+}
+
+.copy-protection {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
