@@ -2,10 +2,8 @@ const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-// eslint-disable-next-line no-unused-vars
-const webpack = require("webpack");
 
-/** @type {webpack.Configuration} */
+/** @type {import("webpack").Configuration} */
 module.exports = {
   entry: "./src/js/main.js",
   output: {
@@ -18,13 +16,19 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/,
+        test: /\.(css|sass|scss)$/,
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
           },
           {
             loader: "css-loader",
+          },
+          {
+            loader: "postcss-loader",
+          },
+          {
+            loader: "sass-loader",
           },
         ],
       },
