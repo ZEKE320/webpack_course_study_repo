@@ -6,6 +6,7 @@
   "scripts": {
     "start": "npx webpack serve --mode=development",
     "build": "webpack",
+    "build:prod": "webpack --mode=production",
     "build:dev": "webpack --mode=development"
   },
   "author": "",

@@ -8,10 +8,10 @@
       "script": "build:dev"
     },
     {
-      "label": "webpack: build",
+      "label": "webpack: build:prod",
       "group": "build",
       "type": "npm",
-      "script": "build"
+      "script": "build:prod"
     }
   ]
 }
