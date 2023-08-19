@@ -2,6 +2,7 @@ const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+// eslint-disable-next-line no-unused-vars
 const webpack = require("webpack");
 
 /** @type {webpack.Configuration} */
@@ -11,6 +12,9 @@ module.exports = {
     path: path.resolve(__dirname, "./dist"),
     filename: "./js/main.js",
   },
+  // devServer: {
+  //   static: path.resolve(__dirname, "./src"),
+  // },
   module: {
     rules: [
       {
@@ -58,6 +62,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/template/access.pug",
       filename: "./access.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/template/members/taro.pug",
+      filename: "./members/taro.html",
     }),
     new CleanWebpackPlugin(),
   ],

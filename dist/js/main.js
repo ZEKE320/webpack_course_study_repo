@@ -1,0 +1,1 @@
+(()=>{"use strict";console.log("Hello JS!"),console.log("Called module my.js")})();
