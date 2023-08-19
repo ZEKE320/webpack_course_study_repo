@@ -26,12 +26,21 @@ module.exports = {
       },
       {
         test: /\.(png|jpg|gif|svg)$/,
+        type: "asset/resource",
+        generator: {
+          filename: "./img/[name][ext]",
+        },
+      },
+      {
+        test: /\.pug$/,
         use: [
           {
-            loader: "file-loader",
+            loader: "html-loader",
+          },
+          {
+            loader: "pug-html-loader",
             options: {
-              esModule: false,
-              name: "./img/[name].[ext]",
+              pretty: true,
             },
           },
         ],
