@@ -52,8 +52,12 @@ module.exports = {
       filename: "./css/main.css",
     }),
     new HtmlWebpackPlugin({
-      template: "./src/template/index.html",
+      template: "./src/template/index.pug",
       filename: "./index.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/template/access.pug",
+      filename: "./access.html",
     }),
     new CleanWebpackPlugin(),
   ],
