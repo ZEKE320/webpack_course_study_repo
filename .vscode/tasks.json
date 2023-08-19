@@ -2,16 +2,16 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "webpack: test_env build:dev",
+      "label": "webpack: build:dev",
       "group": "build",
-      "type": "shell",
-      "command": "cd ./test_env && npx webpack --mode development"
+      "type": "npm",
+      "script": "build:dev"
     },
     {
-      "label": "webpack: test_env build:prod",
+      "label": "webpack: build",
       "group": "build",
-      "type": "shell",
-      "command": "cd ./test_env && npx webpack --mode production"
+      "type": "npm",
+      "script": "build"
     }
   ]
 }
