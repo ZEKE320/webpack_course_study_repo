@@ -1,5 +1,5 @@
 import my from "./my.js";
-import "../css/main.css";
+import "../sass/main.scss";
 
 console.log("Hello JS!");
 my();
