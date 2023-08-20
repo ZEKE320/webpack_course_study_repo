@@ -25,7 +25,7 @@ module.exports = {
         use: [{ loader: "babel-loader" }],
       },
       {
-        test: /\.(css|sass|scss)$/,
+        test: /\.(css|sass|scss)$/i,
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
@@ -42,7 +42,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|jpg|gif|svg)$/,
+        test: /\.(png|jpg|jpeg|gif|svg)$/i,
         type: "asset/resource",
         generator: {
           filename: "./img/[name][ext]",
@@ -60,7 +60,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.pug$/,
+        test: /\.pug$/i,
         use: [
           {
             loader: "html-loader",
