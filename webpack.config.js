@@ -7,6 +7,7 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 /** @type {import("webpack").Configuration} */
 module.exports = {
+  mode: "production",
   entry: "./src/js/main.js",
   output: {
     path: path.resolve(__dirname, "./dist"),
