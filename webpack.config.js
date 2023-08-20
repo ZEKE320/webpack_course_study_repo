@@ -3,7 +3,6 @@
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 /** @type {import("webpack").Configuration} */
 module.exports = {
@@ -14,6 +13,7 @@ module.exports = {
     path: path.resolve(__dirname, "./dist"),
     filename: "./js/main.js",
     publicPath: "/",
+    clean: true,
   },
   module: {
     rules: [
@@ -94,6 +94,5 @@ module.exports = {
       template: "./src/template/members/taro.pug",
       filename: "./members/taro.html",
     }),
-    new CleanWebpackPlugin(),
   ],
 };
