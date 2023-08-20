@@ -10,7 +10,7 @@
     "build:dev": "webpack --mode=development"
   },
   "author": "",
-  "license": "ISC",
+  "license": "UNLICENSED",
   "devDependencies": {
     "@babel/core": "^7.22.10",
     "@babel/preset-env": "^7.22.10",
@@ -20,7 +20,6 @@
     "@typescript-eslint/parser": "^6.4.0",
     "autoprefixer": "^10.4.15",
     "babel-loader": "^9.1.3",
-    "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.8.1",
     "eslint": "^8.47.0",
     "eslint-config-prettier": "^9.0.0",
