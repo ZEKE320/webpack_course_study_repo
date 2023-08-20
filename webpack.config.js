@@ -46,6 +46,17 @@ module.exports = {
         generator: {
           filename: "./img/[name][ext]",
         },
+        use: [
+          {
+            loader: "image-webpack-loader",
+            options: {
+              mozjpeg: {
+                progressive: true,
+                quality: 65,
+              },
+            },
+          },
+        ],
       },
       {
         test: /\.pug$/,
