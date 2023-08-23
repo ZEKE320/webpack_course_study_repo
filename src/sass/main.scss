@@ -45,6 +45,18 @@ h1 {
   margin: 1em 0;
 }
 
+$icon-size: 64px;
+
+.icon {
+  width: $icon-size;
+  height: $icon-size;
+  border-radius: calc($icon-size/2);
+  padding: 4px;
+  position: absolute;
+  top: 1em;
+  left: 1em;
+}
+
 @mixin set-margin($direction, $value) {
   margin-#{$direction}: $value;
 }
