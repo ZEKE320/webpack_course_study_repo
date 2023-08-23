@@ -34,6 +34,7 @@
     "visualstudioexptteam.vscodeintellicode-completions",
     "visualstudioexptteam.vscodeintellicode",
     "xabikos.javascriptsnippets",
-    "ziyasal.vscode-open-in-github"
+    "ziyasal.vscode-open-in-github",
+    "styled-components.vscode-styled-components"
   ]
 }
