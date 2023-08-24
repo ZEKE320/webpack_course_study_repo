@@ -8,7 +8,10 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   mode: "production",
   devtool: "source-map",
-  entry: "./src/js/main.js",
+  entry: {
+    main: "./src/js/main.js",
+    member: "./src/ts/member.tsx",
+  },
   output: {
     path: path.resolve(__dirname, "./dist"),
     filename: "./js/[name]-[contenthash].bundle.js",
