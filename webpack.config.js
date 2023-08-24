@@ -16,7 +16,10 @@ module.exports = {
     clean: true,
   },
   resolve: {
-    modules: [path.resolve(__dirname, "./src"), "node_modules"],
+    modules: [
+      path.resolve(__dirname, "./src"),
+      path.resolve(__dirname, "./node_modules"),
+    ],
   },
   module: {
     rules: [
