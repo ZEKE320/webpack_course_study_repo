@@ -1,5 +1,5 @@
-@use "./menu.scss";
-@use "./footer.scss";
+@use "sass/menu.scss";
+@use "sass/footer.scss";
 
 html,
 body,
@@ -19,6 +19,7 @@ body {
   padding: 0;
   font-size: 16px;
   font-family: sans-serif;
+  color: lightblue;
 }
 
 h1 {
@@ -44,15 +45,23 @@ h1 {
   margin: 1em 0;
 }
 
+$icon-size: 64px;
+
+.icon {
+  width: $icon-size;
+  height: $icon-size;
+  border-radius: calc($icon-size/2);
+  padding: 4px;
+  position: absolute;
+  top: 1em;
+  left: 1em;
+}
+
 @mixin set-margin($direction, $value) {
   margin-#{$direction}: $value;
 }
 
 $text-color: orange;
-
-body {
-  color: lightblue;
-}
 
 .content {
   .title {
