@@ -3,6 +3,9 @@ extends _layout.pug
 block locals
   - let title = "Hello PUG!!!"
 
+block scripts
+  - let scripts = ["js/main.js"]
+
 block content
   h1 Hello PUG!!!
   div#react-root Here is `react-root`.
