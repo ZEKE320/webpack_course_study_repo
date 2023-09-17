@@ -10,7 +10,7 @@ module.exports = {
   devtool: "source-map",
   entry: {
     main: "./src/js/main.js",
-    member: "./src/ts/member.tsx",
+    // member: "./src/ts/member.tsx",
   },
   output: {
     path: path.resolve(__dirname, "./dist"),
